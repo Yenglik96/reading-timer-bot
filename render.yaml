@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: reading-timer-bot
-    env: python
-    buildCommand: ""
-    startCommand: python bot.py
-    plan: free
