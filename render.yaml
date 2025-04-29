@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-bot-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7764959521:AAH0v27Vzwh_wO_iibzJ5ilhhlpEszf1A4I
+      - key: WEBHOOK_URL
+        value: https://telegram-bot-server.onrender.com
